@@ -128,3 +128,6 @@ jhipster:
 # ===================================================================
 
 application:
+    redisHost: localhost
+    redisPort: 6379
+    expireTimeInHours : 48  

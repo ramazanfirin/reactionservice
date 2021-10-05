@@ -11,4 +11,30 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "application", ignoreUnknownFields = false)
 public class ApplicationProperties {
 
+	String redisHost;
+	Long redisPort;
+	Long expireTimeInHours;
+	
+	
+	public String getRedisHost() {
+		return redisHost;
+	}
+	public void setRedisHost(String redisHost) {
+		this.redisHost = redisHost;
+	}
+	public Long getRedisPort() {
+		return redisPort;
+	}
+	public void setRedisPort(Long redisPort) {
+		this.redisPort = redisPort;
+	}
+	public Long getExpireTimeInHours() {
+		return expireTimeInHours;
+	}
+	public void setExpireTimeInHours(Long expireTimeInHours) {
+		this.expireTimeInHours = expireTimeInHours;
+	}
+
+	
 }
+	
